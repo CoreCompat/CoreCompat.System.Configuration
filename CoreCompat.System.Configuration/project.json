@@ -1,18 +1,42 @@
 {
   "version": "4.2.3-*",
 
+  "authors": [ "Mono" ],
+  "title": "System.Configuration for .NET Core",
+  "description": "Provides an implementation of System.Configuration, based on Mono, for .NET Core",
+
+  "packOptions": {
+    "owners": [ "quamotion" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CoreCompat/CoreCompat.System.Configuration"
+    },
+  },
+
   "buildOptions": {
+    "allowUnsafe": true,
     "compile": {
       "include": [
         "../../../../../../../src/mono/mcs/build/common/MonoTODOAttribute.cs",
         "../../../../../../../src/mono/mcs/class/System/System.Configuration/**/*.cs",
+        "../../../../../../../src/mono/mcs/class/System.Configuration/**/*.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/mscorlib/system/ICloneable.cs",
-        "**/*.cs",
+        "**/*.cs"
+      ],
+      "perhaps": [
+        "../../../../../../../src/mono/mcs/class/referencesource/System.Xml/System/Xml/Dom/XmlNodeReader.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.Xml/System/Xml/Core/ReadContentAsBinaryHelper.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.Xml/System/Xml/Core/IncrementalReadDecoders.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.Xml/System/Xml/Base64Decoder.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.Xml/System/Xml/BinHexDecoder.cs",
+        "../../../../../../../src/mono/mcs/class/System.XML/ReferenceSources/Res.cs"
       ],
       "exclude": [
         "../../../../../../../src/mono/mcs/class/System.Configuration/Test/**/*.cs",
         "../../../../../../../src/mono/mcs/class/System.Configuration/Assembly/",
-        "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/ConfigXmlTextReader.cs",
+        "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/RsaProtectedConfigurationProvider.cs",
+        "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/ConfigHelper.cs",
+        "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/IConfigXmlNode.cs",
         "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/IntegerConfigurationProperty.cs",
         "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/TimeSpanConfigurationProperty.cs",
         "../../../../../../../src/mono/mcs/class/System.Configuration/System.Configuration/NonEmptyStringConfigurationProperty.cs",
@@ -28,6 +52,8 @@
       "imports": "dnxcore50",
       "dependencies": {
         "NETStandard.Library": "1.5.0-rc3-24117-00",
+        "System.Reflection.TypeExtensions": "4.1.0-rc2-24027",
+        "System.Reflection.Extensions": "4.0.1-rc2-24027",
         "System.Collections.NonGeneric": "4.0.1-rc2-24027",
         "System.ComponentModel": "4.0.1-rc2-24027",
         "System.Security.Cryptography.Csp": "4.0.0-rc2-24027",
@@ -37,7 +63,8 @@
         "System.Runtime.Serialization.Primitives": "4.1.1-rc3-24117-00",
         "System.Runtime.Serialization.Formatters": "4.0.0-rc3-24117-00",
         "System.Runtime.Serialization.Xml": "4.1.1-rc2-24027",
-        "System.Xml.ReaderWriter": "4.0.11-rc2-24027"
+        "System.Xml.ReaderWriter": "4.0.11-rc2-24027",
+        "System.Diagnostics.Contracts": "4.0.1-rc2-24027"
       }
     }
   }
