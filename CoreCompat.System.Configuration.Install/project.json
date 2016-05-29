@@ -1,0 +1,47 @@
+{
+  "version": "4.2.3-*",
+
+  "authors": [ "Mono" ],
+  "title": "System.Configuration.Install for .NET Core",
+  "description": "Provides an implementation of System.Configuration.Install, based on Mono, for .NET Core",
+
+  "packOptions": {
+    "owners": [ "quamotion" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CoreCompat/CoreCompat.System.Configuration.Install"
+    },
+  },
+
+  "buildOptions": {
+    "allowUnsafe": true,
+    "compile": {
+      "include": [
+        "../../../../../../../src/mono/mcs/build/common/MonoTODOAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/System.Configuration.Install/**/*.cs",
+        "../../../../../../../src/mono/mcs/build/common/SR.cs",
+        "../../../../../../../src/mono/mcs/class/System/ReferenceSources/SR.cs",
+        "../../../../../../../src/mono/mcs/class/System/ReferenceSources/SR2.cs",
+        "**/*.cs"
+      ],
+      "exclude": [
+        "../../../../../../../src/mono/mcs/class/System.Configuration.Install/Assembly",
+        "../../../../../../../src/mono/mcs/class/System.Configuration.Install/System.Diagnostics/PerformanceCounterInstaller.cs"
+      ]
+    },
+    "define": [ "CORECLR" ]
+  },
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-24117-00",
+        "CoreCompat.System.Diagnostics.EventLog": "4.2.3-r1",
+        "CoreCompat.System.ComponentModel.Attributes": "4.2.3-r7",
+        "CoreCompat.System.Security": "4.2.3-r3",
+        "System.ComponentModel.Primitives": "4.1.0-rc3-24125-00",
+        "System.ComponentModel.TypeConverter": "4.0.1-rc2-24027"
+      }
+    }
+  }
+}
