@@ -1,4 +1,4 @@
-public class Consts
+internal class Consts
 {
     public const string AssemblySystem = "System";
     public const string AssemblySystem_Drawing = "System.Drawing";

@@ -38,6 +38,11 @@ namespace System
             : base(message, inner)
         {
         }
+
+        public SystemException(string message, int errorCode)
+            : base(message)
+        {
+        }
     }
 }
 #endif
