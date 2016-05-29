@@ -1,0 +1,56 @@
+{
+  "version": "4.2.3-*",
+
+  "authors": [ "Mono" ],
+  "title": "System.Diagnostics.EventLog for .NET Core",
+  "description": "Provides an implementation of System.Diagnostics.EventLog, based on Mono, for .NET Core",
+
+  "packOptions": {
+    "owners": [ "quamotion" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CoreCompat/CoreCompat.System.Diagnostics.EventLog"
+    },
+  },
+
+  "buildOptions": {
+    "allowUnsafe": true,
+    "compile": {
+      "include": [
+        "../../../../../../../src/mono/mcs/build/common/MonoTODOAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLogInstaller.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/MonitoringDescriptionAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLog.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLogImpl.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLogEntryType.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLogEntry.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventLogEntryCollection.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventInstance.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EventSourceCreationData.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EntryWrittenEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/EntryWrittenEventArgs.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/OverflowAction.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/Win32EventLog.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/LocalFileEventLog.cs",
+        "../../../../../../../src/mono/mcs/class/System/System.Diagnostics/NullEventLog.cs",
+        "**/*.cs"
+      ],
+      "exclude": [
+      ]
+    },
+    "define": [ "CORECLR" ]
+  },
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-24117-00",
+        "CoreCompat.System.ComponentModel.Attributes": "4.2.3-r7",
+        "Microsoft.Win32.Registry": "4.0.0-rc2-24027",
+        "System.IO.FileSystem.Watcher": "4.0.0-rc2-24027",
+        "System.Threading.Thread": "4.0.0-rc2-24027",
+        "System.Diagnostics.Process": "4.1.0-rc2-24027"
+      }
+    }
+  }
+}
