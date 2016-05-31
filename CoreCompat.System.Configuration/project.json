@@ -59,6 +59,7 @@
         "System.Security.Cryptography.Csp": "4.0.0-rc2-24027",
         "System.Xml.XmlDocument": "4.0.1-rc2-24027",
         "System.ComponentModel.TypeConverter": "4.0.1-rc2-24027",
+        "System.ComponentModel.Primitives": "4.1.0-rc3-24125-00",
         "System.Collections.Specialized": "4.0.1-rc2-24027",
         "System.Runtime.Serialization.Primitives": "4.1.1-rc3-24117-00",
         "System.Runtime.Serialization.Formatters": "4.0.0-rc3-24117-00",
