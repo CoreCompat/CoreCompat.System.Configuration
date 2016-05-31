@@ -1,0 +1,81 @@
+{
+  "version": "4.2.3-*",
+
+  "authors": [ "Mono" ],
+  "title": "System.ComponentModel.Design for .NET Core",
+  "description": "Provides an implementation System.ComponentModel.Design, based on Mono, for .NET Core",
+
+  "packOptions": {
+    "owners": [ "quamotion" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CoreCompat/CoreCompat.System.ComponentModel.Design"
+    },
+  },
+
+  "buildOptions": {
+    "allowUnsafe": true,
+    "compile": {
+      "include": [
+        "**/*.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/I*.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/*Attribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/serialization/*.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DocumentCollection.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DocumentEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DocumentEventArgs.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DesignerTransaction.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DesignerTransactionCloseEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DesignerTransactionCloseEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ActiveDocumentEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ActiveDocumentEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentRenameEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentRenameEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentChangingEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentChangingEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentChangedEventHandler.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ComponentChangedEvent.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/HelpKeywordType.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/HelpContextType.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/SelectionTypes.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ServiceCreatorCallback.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ViewTechnology.cs",
+        "../../../../../../../src/mono/mcs/build/common/SR.cs",
+        "../../../../../../../src/mono/mcs/class/System/ReferenceSources/SR.cs",
+        "../../../../../../../src/mono/mcs/class/System/ReferenceSources/SR2.cs"
+      ],
+      "exclude": [
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/CommandID.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/PropertyTabScope.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/InheritanceLevel.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/IDesigner.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DesignerVerb.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/DesignerVerbCollection.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/MenuCommand.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/CheckoutException.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/StandardCommands.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/RefreshPropertiesAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/NotifyParentPropertyAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ParenthesizePropertyNameAttribute.cs"
+      ]
+    },
+    "define": [ "CORECLR", "DISABLE_REMOTING" ]
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-24117-00",
+        "CoreCompat.System.Security": "4.2.3-r3",
+        "System.ComponentModel.Primitives": "4.1.0-rc3-24125-00",
+        "System.Collections.Specialized": "4.0.1-rc2-24027",
+        "System.ComponentModel.TypeConverter": "4.1.0-rc3-24131-00",
+        "System.ComponentModel": "4.0.1-rc2-24027",
+        "CoreCompat.System.ComponentModel.Attributes": "4.2.3-r7"
+      }
+    }
+  }
+}

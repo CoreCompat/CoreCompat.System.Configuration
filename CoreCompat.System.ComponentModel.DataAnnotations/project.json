@@ -18,10 +18,34 @@
     "compile": {
       "include": [
         "**/*.cs",
-        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/**/*.cs",
-        "../../../../../../../src/mono/mcs/class/System.ComponentModel.DataAnnotations/ReferenceSources/SR.cs",
-        "../../../../../../../src/mono/mcs/class/System.ComponentModel.DataAnnotations/ReferenceSources/SR.missing.cs"
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/**/*.cs"
       ],
+      "exclude": [
+        "C",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/Schema/DatabaseGeneratedOption.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/IValidatableObject.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/AppContextDefaultValues.Default.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/LocalAppContextSwitches.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/InternalApis/**/*.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/AssociatedMetadataTypeTypeDescriptor.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/AssociatedMetadataTypeTypeDescriptionProvider.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/CompareAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/PhoneAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/UrlAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/RequiredAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/ValidationException.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/DisplayAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/UIHintAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/FilterUIHintAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/DatabaseGeneratedOption.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/ValidationAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/ValidationResult.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/ValidationContext.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/DataTypeAttribute.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/DataType.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/DataAnnotations/DataAnnotationsResources.Designer.cs"
+
+      ]
     },
     "define": [ "CORECLR" ]
   },
@@ -29,7 +53,11 @@
   "frameworks": {
     "netstandard1.5": {
       "dependencies": {
-        "NETStandard.Library": "1.5.0-rc3-24117-00"
+        "NETStandard.Library": "1.5.0-rc3-24117-00",
+        "System.ComponentModel.Annotations": "4.1.0-rc3-24131-00",
+        "CoreCompat.System.ComponentModel.Attributes": "4.2.3-r7",
+        "CoreCompat.System.ComponentModel.Design": "4.2.3",
+        "CoreCompat.System.Configuration": "4.2.3-r4"
       }
     }
   }
