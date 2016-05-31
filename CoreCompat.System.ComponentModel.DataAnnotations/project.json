@@ -1,0 +1,36 @@
+{
+  "version": "4.2.3-*",
+
+  "authors": [ "Mono" ],
+  "title": "System.ComponentModel.DataAnnotations for .NET Core",
+  "description": "Provides an implementation of System.ComponentModel.DataAnnotations, based on Mono, for .NET Core",
+
+  "packOptions": {
+    "owners": [ "quamotion" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CoreCompat/CoreCompat.System.ComponentModel.DataAnnotations"
+    }
+  },
+
+  "buildOptions": {
+    "allowUnsafe": true,
+    "compile": {
+      "include": [
+        "**/*.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System.ComponentModel.DataAnnotations/**/*.cs",
+        "../../../../../../../src/mono/mcs/class/System.ComponentModel.DataAnnotations/ReferenceSources/SR.cs",
+        "../../../../../../../src/mono/mcs/class/System.ComponentModel.DataAnnotations/ReferenceSources/SR.missing.cs"
+      ],
+    },
+    "define": [ "CORECLR" ]
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "dependencies": {
+        "NETStandard.Library": "1.5.0-rc3-24117-00"
+      }
+    }
+  }
+}
