@@ -66,7 +66,6 @@
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/MergablePropertyAttribute.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/NotifyParentPropertyAttribute.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/ParenthesizePropertyNameAttribute.cs",
-        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/ReadOnlyAttribute.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/design/RefreshPropertiesAttribute.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/ExtenderProvidedPropertyAttribute.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/TypeConverterAttribute.cs"
