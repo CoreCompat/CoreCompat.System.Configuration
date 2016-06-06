@@ -23,6 +23,8 @@
         "../../../../../../../src/mono/mcs/build/common/Locale.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/mscorlib/system/resources/iresourcereader.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/mscorlib/system/resources/iresourcewriter.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/ArraySubsetEnumerator.cs",
+        "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/EventDescriptorCollection.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/IExtenderProvider.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/MemberDescriptor.cs",
         "../../../../../../../src/mono/mcs/class/referencesource/System/compmod/system/componentmodel/EventDescriptor.cs",
