@@ -1,5 +1,10 @@
 namespace System.Runtime.InteropServices {
-    public class ExternalException : SystemException
+    public class ExternalException :
+#if CORECLR
+        Exception
+#else
+        SystemException
+#endif
     {
         public ExternalException ()
         {
